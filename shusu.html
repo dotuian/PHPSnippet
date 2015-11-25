@@ -1,0 +1,23 @@
+<script type="text/javascript">
+function sushu(n){
+    var result=[];
+    for(var i=2;i<=n;i++){
+        var f=true;
+        var limit=parseInt( Math.pow(i,0.5)+1);
+        for(var j=2;j<=limit;j++){
+            if (i%j==0){
+                f=false;
+                break;
+            }
+        }
+        if (f){
+            result.push(i);
+        }
+    }
+    return result;
+}
+
+var start=(new Date()).getTime();
+var b=sushu(10000);
+console.log("time is " + ((new Date()).getTime()-start)/1000);
+</script>
