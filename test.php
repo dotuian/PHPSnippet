@@ -33,3 +33,42 @@ function add(array $a,  $b){
 echo call_user_func('add', array(1,2), 10);
 
 
+
+echo PHP_EOL;
+
+$count = 0 ;
+echo str_pad(++$count, 3, '0', STR_PAD_LEFT);
+echo PHP_EOL;
+
+
+
+echo substr("abcdefg", -2) . PHP_EOL;
+
+
+echo substr("0123456789abcdefghi", 0, 14) . PHP_EOL;
+
+echo substr("0123", 0, 14) . PHP_EOL;
+
+
+
+echo strpos("dotuian.yahoo.jp",".") . PHP_EOL;
+
+$str = "test.x-dotuian.yahoo.jp";
+
+
+echo substr($str, 0, strpos($str,".")) . PHP_EOL;
+
+
+$a = "01";
+echo $a + 1;
+echo PHP_EOL;
+
+
+
+
+
+
+
+
+
+
